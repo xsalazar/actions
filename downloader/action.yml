@@ -1,0 +1,11 @@
+name: "Downloads file"
+description: "Downloads file with wget from URL provided"
+inputs:
+  url:
+    description: "URL to call wget against"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.url }}
