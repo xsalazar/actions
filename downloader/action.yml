@@ -4,8 +4,12 @@ inputs:
   url:
     description: "URL to call wget against"
     required: true
+  filename:
+    description: "Output filename"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.url }}
+    - ${{ inputs.filename }}
