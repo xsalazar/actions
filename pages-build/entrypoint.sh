@@ -3,6 +3,7 @@
 username="$INPUT_USERNAME"
 token="$INPUT_API_TOKEN"
 
-curl -X POST \
-     -H "authorization: Bearer $token" \
-     https://api.github.com/repos/$username/$username.github.io/pages/builds
+curl \
+  -H "Accept: application/vnd.github.v3+json" \
+  -u $username:$token \
+  -X POST https://api.github.com/repos/$username/$username.github.io/pages/builds
