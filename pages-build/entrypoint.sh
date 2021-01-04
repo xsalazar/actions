@@ -3,4 +3,6 @@
 username="$INPUT_USERNAME"
 token="$INPUT_API_TOKEN"
 
-curl -u $username:$token -X POST https://api.github.com/repos/$username/$username.github.io/pages/builds
+curl -X POST \
+     -H "authorization: Bearer $token" \
+     https://api.github.com/repos/$username/$username.github.io/pages/builds
