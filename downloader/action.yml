@@ -1,8 +1,8 @@
 name: "Downloads file"
-description: "Downloads file with wget from URL provided"
+description: "Downloads file with curl from URL provided"
 inputs:
   url:
-    description: "URL to call wget against"
+    description: "URL to call curl against"
     required: true
   filename:
     description: "Output filename"
