@@ -1,3 +1,3 @@
 #!/bin/bash
 
-curl -L "$INPUT_URL" -o $GITHUB_WORKSPACE/$INPUT_FILENAME
+curl -L --compressed "$INPUT_URL" -o $GITHUB_WORKSPACE/$INPUT_FILENAME
