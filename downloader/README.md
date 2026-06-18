@@ -15,7 +15,7 @@ This Action will call `curl` against the input URL and save it in the current di
 ## Example usage
 
 ```
-uses: xsalazar/actions/downloader@master
+uses: xsalazar/actions/downloader@main
 with:
   url: ${{ secrets.URL }}
   filename: 'my_document.pdf'
